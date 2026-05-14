@@ -194,7 +194,7 @@
         }
 
         .quote {
-            background: linear-gradient(135deg, #060308, #090909);
+            background: linear-gradient(135deg, #0603089a, #0909099c);
             text-align: center;
             padding: 100px 10%;
         }
