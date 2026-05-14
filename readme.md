@@ -1,6 +1,6 @@
 # 🖤 Vibeke Stene Tribute Landing Page
 
-Uma landing page atmosférica e cinematográfica criada em homenagem à cantora norueguesa Vibeke Stene, conhecida mundialmente por sua trajetória no metal sinfônico e gothic metal.
+Uma landing page criada em homenagem à cantora norueguesa Vibeke Stene, conhecida mundialmente por sua trajetória no metal sinfônico e gothic metal.
 
 ![alt text](<FireShot Capture 033 - Vibeke Stene Fan - [127.0.0.1].png>)
 
@@ -14,9 +14,10 @@ A proposta da landing page é transmitir elegância, melancolia e profundidade a
 
 ## 🔗 Demonstração
 
-🌐 Deploy no GitHub Pages:
+🌐 Deploy:
 
 👉 https://simonepenido.github.io/vibeke_stene_fan/
+👉 https://vibekestenefan.netlify.app/
 
 ---
 
