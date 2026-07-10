@@ -177,3 +177,70 @@ window.addEventListener("load", () => {
 });
 
 
+/* ======================================================
+   LIGHTBOX GALERIA
+====================================================== */
+
+const gallery = document.querySelectorAll(".gallery img");
+
+// Cria o overlay
+const lightbox = document.createElement("div");
+lightbox.id = "lightbox";
+
+lightbox.innerHTML = `
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img">
+`;
+
+document.body.appendChild(lightbox);
+
+const lightboxImg = document.getElementById("lightbox-img");
+
+
+/* ======================================================
+   GALERIA AMPLIADA
+====================================================== */
+
+// Abrir imagem
+gallery.forEach(img => {
+
+    img.style.cursor = "zoom-in";
+
+    img.addEventListener("click", () => {
+
+        lightbox.classList.add("active");
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+
+        document.body.style.overflow = "hidden";
+
+    });
+
+});
+
+// Fechar clicando no fundo
+lightbox.addEventListener("click", (e) => {
+
+    if (
+        e.target === lightbox ||
+        e.target.classList.contains("close-lightbox")
+    ) {
+
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+
+    }
+
+});
+
+// Fechar com ESC
+document.addEventListener("keydown", (e) => {
+
+    if (e.key === "Escape") {
+
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+
+    }
+
+});
