@@ -208,6 +208,8 @@ gallery.forEach(img => {
 
     img.addEventListener("click", () => {
 
+        if (window.innerWidth <= 768) return;
+
         lightbox.classList.add("active");
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt;
